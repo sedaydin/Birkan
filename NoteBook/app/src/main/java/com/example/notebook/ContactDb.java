@@ -7,9 +7,10 @@ public class ContactDb {
 
     }
 
-    public ContactDb(String title, String note) {
+    public ContactDb(String title, String note, String id) {
         this.title = title;
         this.note = note;
+        this.id = id;
     }
 
     public String getTitle() {
@@ -26,6 +27,14 @@ public class ContactDb {
 
     public void setNote(String note) {
         this.note = note;
+    }
+
+    public String getNoteId() {
+        return id;
+    }
+
+    public void setNoteId(String id) {
+        this.id = id;
     }
 
 }
